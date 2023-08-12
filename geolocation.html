@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="../20230801_WSDA2_portfolio/css/home.css">
+    <link rel="stylesheet" href="../WSDA3_Geolocation/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      async
+      defer
+    ></script>
     <script
       type="text/javascript"
       src="https://www.bing.com/api/maps/mapcontrol?callback=GetMap&key=AnCJBPxbRs9A31N2sOmynMefdJHCBaFquKgWtJm7OVyrn8Zc58znWrmHbhaWtEQQ"
       async
       defer
     ></script>
-    <script src="https://cdn.tailwindcss.com"></script>
+
     <style>
       html,
       body {
@@ -20,22 +30,46 @@
       }
     </style>
   </head>
-  <body>
-    <div class="topnav" id="myTopnav">
-      <img class="logo" src="../20230801_WSDA2_portfolio/css/Screenshot 2023-08-04 at 10.22.35 PM.png">
-      <a style="text-decoration:none" href="../html/home.html" >Home</a>
-      <a style="text-decoration:none" href="../html/about.html">About</a>
-      <a  style="text-decoration:none" href="../html/skill&Exp.html">Skills & Experiences</a>
-      <a  style="text-decoration:none" href="../html/photoGallery.html">Photo Gallery</a>
-      <!-- <a href="../html/register.html">Register</a> -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
-    </div>
-    
+  <body class="bg-dark">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Skills & Experiences</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#">Photo Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Geolocation</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <div
-      class="container mx-auto bg-slate-900"
+      class="container mx-auto bg-black"
       style="position: relative; height: 100vh"
     >
       <div id="myMap" style="height: 80%"></div>
@@ -64,21 +98,28 @@
       </script>
     </div>
     <center>
-    <div style="display:inline-flex;"> <svg width="100" height="100">
-      <!-- Circle for the face -->
-      <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="yellow" />
-  
-      <!-- Eyes -->
-      <circle cx="35" cy="35" r="5" fill="black" />
-      <circle cx="65" cy="35" r="5" fill="black" />
-  
-      <!-- Mouth (smile) - Using path -->
-      <path d="M30 60 Q50 80 70 60" stroke="black" fill="transparent" />
-    </svg>
-  </div>
+      <div style="display: inline-flex">
+        <svg width="100" height="100">
+          <!-- Circle for the face -->
+          <circle
+            cx="50"
+            cy="50"
+            r="40"
+            stroke="black"
+            stroke-width="2"
+            fill="yellow"
+          />
 
-  <p >THANK YOU FOR VIEWING MY LOCATION.</p>
-</center>
-    
+          <!-- Eyes -->
+          <circle cx="35" cy="35" r="5" fill="black" />
+          <circle cx="65" cy="35" r="5" fill="black" />
+
+          <!-- Mouth (smile) - Using path -->
+          <path d="M30 60 Q50 80 70 60" stroke="black" fill="transparent" />
+        </svg>
+      </div>
+
+      <p style="color: white">THANK YOU FOR VIEWING MY LOCATION.</p>
+    </center>
   </body>
 </html>
